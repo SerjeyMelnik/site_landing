@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		body{margin: 0;
+			padding: 0;}
+		div.head
+		{
+			width: 100%;
+			height: 150px;
+			background-color: #666666;
+
+		}
+		div.box
+		{
+			width: 100%;
+			overflow: hidden;
+			//background-color: #333333;
+		}
+		div.lsidebar,.main_box,.rsidebar
+		{
+			
+		float: left;
+		} 
+		div.lsidebar
+		{
+			
+			height: 300px;
+			width: 20%;
+			margin-left: 10px;
+			margin-right:10px;  
+			//border-top: 2px;
+			background-color: #666666;
+		}
+		div.rsidebar
+		{
+			width: 15%;
+			background-color: blue;
+		}
+		div.main_box
+		{
+			
+			width:65%;
+			min-height: 503px;
+			background-color: #C0C0C0;
+		}
+		div.footer
+		{
+			//border-top: 2px solid black;
+			width: 100%;
+			height: 100px;
+			background-color: #666666;
+		}
+		div.menu
+		{position: relative;
+			width: 66%;
+			height: 50px;
+			
+			left: 21%;
+			bottom:  -100px;
+		}
+
+		div.menu ul
+		{
+			list-style: none;/*прибираємо маркери*/
+			font-family: sans-serif;/*шрифт без засічок*/
+			font-size: 20px;
+			
+			margin:0;
+			padding: 0;
+
+		}
+		div.menu li ul
+		{
+			display: none;
+			position: absolute;
+			
+
+		}
+		div.menu li:hover ul
+		{
+			display: block;
+		}
+		div.menu li a{
+			display: block;
+			background-color: #333333;
+			color: #0033CC;
+			border: 1px solid #330000;
+			text-decoration: none;
+			padding: 10px 20px;
+
+		}
+		div.menu li a:hover{
+			background: #000000;
+			color: white;
+		}
+  li.main
+  {
+display: inline-block;
+width: 246px;
+
+  }
+  li.main ul
+  {
+width: 246px;
+  }
+  div.menu li  ul a
+  {
+  	background-color:#333333 ;
+  }
+  div.menu li ul a:hover
+  {
+  	background-color: #666666;
+  	color: white;
+  	border-radius: 10px;
+  }
+  
+div.img img
+{
+width: 100%;
+height:300px;
+float: left;
+ }
+ div.img img:hover
+ {
+ 	opacity: 0.5;
+ 	//border-radius: 10px;
+ }
+ div.img {
+ 	width: calc(90%/3);
+ 	height: 400px;
+ 	margin: 10px 5px 10px 5px;
+ 	float: left;
+ 	padding: 10px;
+ 	background-color: #2F4F4F;
+ 	transition-duration: 0.5s;
+ }
+ div.img:hover
+ {
+ 	transform: scale(1.05);
+ 	//transform: translateY(-10px);
+ 	transition-duration: 0.5s;
+ }
+div.clas, div.vud
+{
+	width: 100%;
+	overflow: hidden;
+}
+
+
+	</style>
+
+</head>
+<body>
+<div class="head">
+	<div class="menu">
+		<ul >
+		<li class="main"><a href="#vzutia">Взуття</a>
+			<ul>
+				<li><a href="#kedu">Кеди</a></li>
+				<li><a href="#butsu">Бутси</a></li>
+				<li><a href="#krosu">Кроссівки</a></li>
+				<li><a href="#for_wrestling">Для боротьби</a></li>
+				
+	  		</ul>
+		</li>
+	
+
+		<li class="main "><a href="#shtanu">Штани</a>
+			<ul>
+				<li><a href="#for_run">Для бігу</a></li>
+				<li><a href="#losinu">Лосіни</a></li>
+				<li><a href="#shortu">Шорти</a></li>
+	  		</ul>
+		</li >
+		<li class="main"><a href="#koftu">Кофти</a>
+			<ul>
+				<li><a href="#tolstovki">Толстовкі</a></li>
+				<li><a href="#obtyag">Обтягуючі</a></li>
+	  		</ul>
+		</li>
+		<li class="main"><a href="#kostym">Костюми</a>
+			<ul>
+				<li><a href="#sport">Звичайні спортивні</a></li>
+				<li><a href="#rashgard">Рашгарди</a></li>
+				<li><a href="#kimono">Кімоно</a></li>
+				
+				
+	  		</ul>
+		</li>
+	</ul>
+	</div>
+</div>
+<div class="box">
+	<div class="lsidebar"></div>
+	<div class="main_box">
+			<div class="clas vzutia" id="vzutia">
+				<h2>Взуття</h2>
+				<div class="vud kedu" id="kedu">
+					<h3>Кеди</h3>
+					<div class="img"><img src="https://images.ua.prom.st/1889524867_w640_h640_muzhskie-kedy-v.jpg"></div>
+					<div class="img"><img src="https://tomodno.com.ua/photos/products/739744730_w1280_h1280_gr1333_2.jpg"></div>
+					<div class="img"><img src="https://images.ua.prom.st/170804060_w640_h640_kedi-converse-.jpg"></div>
+				</div>
+				<div class="vud butsu" id="butsu">
+					<h3>Бутси</h3>
+					<div class="img"><img src="https://sportstyle.discount/content/images/21/butsy-muzhchinam-adidas-bb8090-54428797387552.jpg"></div>
+					<div class="img"><img src="https://soccerpoint.com.ua/upload/catalog/8400/8341/butsi-adidas-x-16.1-fg-bb5839_2.jpg"></div>
+					<div class="img"><img src="https://sport-x.com.ua/content/images/9/butsy-nike-mercurial-vapor-12-elite-fg-njr-13162018773776_small11.jpg"></div>
+				</div>
+				<div class="vud krosu" id="krosu">
+					<h3>Кросівки</h3>
+					<div class="img"><img src="https://images.shafastatic.net/49754718"></div>
+					<div class="img"><img src="https://images.izi.ua/2241157"></div>
+					<div class="img"><img src="https://images.izi.ua/2241162"></div>
+				</div>
+				<div class="vud for_wrestling" id="for_wrestling">
+					<div class="img"><img src="https://i.pinimg.com/originals/9d/6e/c2/9d6ec2691a3b62281ac71e4a59800aa1.jpg" ></div>
+					<div class="img"><img src="https://i.pinimg.com/originals/9d/6e/c2/9d6ec2691a3b62281ac71e4a59800aa1.jpg"></div>
+					<div class="img"><img src="https://i.pinimg.com/originals/9d/6e/c2/9d6ec2691a3b62281ac71e4a59800aa1.jpg"></div>
+				</div>
+			</div>
+			<div class="clas shtanu" id="shtanu">
+				<div class="vud for_run" id="for_run">
+					<div class="img"><img src="https://i.pinimg.com/originals/9d/6e/c2/9d6ec2691a3b62281ac71e4a59800aa1.jpg"></div>
+					<div class="img"><img src="https://i.pinimg.com/originals/9d/6e/c2/9d6ec2691a3b62281ac71e4a59800aa1.jpg"></div>
+					<div class="img"><img src="https://i.pinimg.com/originals/9d/6e/c2/9d6ec2691a3b62281ac71e4a59800aa1.jpg"></div>
+				</div>
+				<div class="vud losinu" id="losinu">
+					<div class="img"><img src="https://i.pinimg.com/originals/9d/6e/c2/9d6ec2691a3b62281ac71e4a59800aa1.jpg"></div>
+					<div class="img"><img src="https://i.pinimg.com/originals/9d/6e/c2/9d6ec2691a3b62281ac71e4a59800aa1.jpg"></div>
+					<div class="img"><img src="https://i.pinimg.com/originals/9d/6e/c2/9d6ec2691a3b62281ac71e4a59800aa1.jpg"></div>
+				</div>
+				<div class="vud shortu" id="shortu">
+					<div class="img"><img src="https://i.pinimg.com/originals/9d/6e/c2/9d6ec2691a3b62281ac71e4a59800aa1.jpg"></div>
+					<div class="img"><img src="https://i.pinimg.com/originals/9d/6e/c2/9d6ec2691a3b62281ac71e4a59800aa1.jpg"></div>
+					<div class="img"><img src="https://i.pinimg.com/originals/9d/6e/c2/9d6ec2691a3b62281ac71e4a59800aa1.jpg"></div>
+				</div>
+			</div>
+			<div class="clas koftu" id="koftu">
+				<div class="vud tolstovki" id="tolstovki"> 
+					<div class="img"><img src=""></div>
+					<div class="img"><img src=""></div>
+					<div class="img"><img src=""></div>
+				</div>
+				<div class="vud obtyag" id="obtyag">
+					<div class="img"><img src=""></div>
+					<div class="img"><img src=""></div>
+					<div class="img"><img src=""></div>
+				</div>
+			</div> 
+			<div class="clas kostym" id="kostym">
+				<div class="vud sport" id="sport">
+					<div class="img"><img src=""></div>
+					<div class="img"><img src=""></div>
+					<div class="img"><img src=""></div>
+				</div>
+				<div class="vud rashgard" id="rashgard">
+					<div class="img"><img src=""></div>
+					<div class="img"><img src=""></div>
+					<div class="img"><img src=""></div>
+				</div>
+				<div class="vud kimono" id="kimono">
+					<div class="img"><img src=""></div>
+					<div class="img"><img src=""></div>
+					<div class="img"><img src=""></div>
+				</div>
+			</div>
+		
+	</div>
+	<div class="rsidebar"></div>
+</div>
+<div class="footer"></div>
+</body>
+</html>

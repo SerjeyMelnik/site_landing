@@ -1,0 +1,683 @@
+@font-face
+{
+	font-family: Dobrozrachniy-Oblique;
+	src:url(fonts/Dobrozrachniy-Oblique.otf);
+}
+@font-face
+{
+	font-family: Space Age;
+	src:url(fonts/space_age.ttf);
+}
+@font-face
+{
+	font-family: Arkitech;
+	src:url(fonts/Arkitech_Light.otf);
+}
+@font-face
+{
+	font-family: DeroldGHOST;
+	src:url(fonts/DeroldGHOST.ttf);
+}
+body
+{
+	margin: 0;
+	padding: 0;
+	/*background: url(https://gameguru.ru/f/wallpapers/3/1/42/71/1920.jpg?11542363648) no-repeat ;*/
+	background: url(fon.jpg) no-repeat ;
+	background-size: 100%;
+	background-attachment: fixed;
+	font-family: sans-serif;
+}
+div.bg
+{
+	width: 100%;
+	height: 100vh;
+	background: url(https://i.pinimg.com/originals/b0/10/73/b01073ee5ba725fc48c2e831b9e22a09.gif) no-repeat;
+	background-size: 100%;
+	opacity: 0.2;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+nav.menu
+{
+width: 100%;
+//height: 70px;
+position: fixed;
+left: 0;
+top:0;
+background: rgba(0,0,0,0.5);
+z-index: 2;	
+text-transform: uppercase;
+}
+nav::before
+{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 4px;
+	background: #00FFFF;
+	margin: 0;
+}
+nav.menu a
+{
+	color: white;
+	text-decoration: none;
+	font-size: 1em;
+	margin: 10px;
+	display: inline-block;
+}
+li
+{
+	display: inline-block;
+}
+nav.menu a::after
+{
+content:"";
+width: 100%;
+height:3px;
+display: block;
+background-color: #00FFFF;
+transform: scale(0,1);
+transition-duration: 0.5s;
+transform-origin: top left;
+
+}
+nav.menu a:hover:after
+{
+	transform: scale(1);
+	transition-duration: 0.5s;
+}
+table
+{width: 100%;}
+
+td{
+	text-align:  center;
+	vertical-align: middle;
+	margin: 0;
+	height: 100vh;
+}
+h1.title,h2.title
+{
+	text-align: center;
+	color: white;
+	
+	font-family: Dobrozrachniy-Oblique;
+	letter-spacing: 5px;
+	text-shadow: 2px 2px 2px black;
+}
+div.main
+{
+	width: 100%;
+	height:100vh;
+	//padding-top: 20%;
+}
+h1.title
+{
+	//margin-top: 20%;
+	margin-bottom: 0px;
+	font-size: 4em;
+	font-family: Space Age;
+}
+h2.title
+{
+	margin-top: 0px;
+	//margin-bottom: 24%;
+	font-size: 3em;
+	font-family: Space Age;
+}
+
+div.experience,div.what,div.about
+{
+	padding-left: 3%;
+	padding-right: 3%;
+	width:94%;
+	background-color:white;
+	overflow: hidden;
+	clear: both;
+}
+
+div.contacts,div.content
+{
+	width: 100%;
+	background-color:white;
+	overflow: hidden;
+	clear: both;
+}
+div.title_main
+{
+margin-top: 50px;
+	text-align: center;
+}
+ h2.title_main
+{
+	display: inline-block;
+	font-size:3em;
+	//margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-family: Space Age;
+}
+h2.title_main::after
+{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 6px;
+	background-color: #00FFFF;
+}
+
+div.info_content
+{
+	width: 100%;
+}
+div.info_content img.img_about
+{
+	float: left;
+	width: 300px;
+	height: 400px;
+}
+div.info_content img.img_about2
+{
+	margin-left:50px;
+	margin-right:50px;
+}
+div.info_content span
+{
+	display: block;
+	text-align: left;
+	font-size: 1.5em;
+	color: #6C98B4;
+	//text-shadow: 1px 1px 4px black; 
+	font-family: DeroldGHOST;
+}
+div.box
+{
+width: 49%;
+margin-bottom: 20px;
+margin-right: 0;
+position: relative;
+}
+div.box img
+{
+	width: 100%;
+}
+div.img_left
+{ 
+	float: left;
+}
+div.img_right
+{
+	float: right;
+}
+ div.border_left
+{
+	width: 10px;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #0FC7C7;
+	transform: scale(1,0);
+	transition-duration: 0.7s;
+}
+
+div.border_right
+{
+	width: 10px;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: #0FC7C7;
+	transform: scale(1,0);
+	transition-duration: 0.7s;
+}
+div.border_top
+{
+	width: 100%;
+	height: 10px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #0FC7C7;
+	transform: scale(0,1);
+	transition-duration: 0.7s;
+}
+div.border_bottom
+{
+	width: 100%;
+	height: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: #0FC7C7;
+	transform: scale(0,1);
+	transition-duration: 0.7s;
+}
+div.box:hover div[class^="border"]
+{
+	transform: scale(1);
+}
+div.black
+{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	bottom: 10px;
+	right: 10px;
+	background-color: rgba(0,0,0,0.5);
+	opacity: 0;
+}
+div.box:hover div.black
+{
+	opacity: 1;
+//background-color: rgba(0,0,0,0.5);
+}
+div.black h3
+{
+	text-align: center;
+	font-family: Space Age;
+	color: rgba(255,255,255,1);
+	font-size: 2em;
+}
+div.box h3.out
+{
+	text-align: left;
+	font-family: Space Age;
+
+}
+div.black a,h3.out a
+{
+	text-decoration: none;
+	color: rgba(15,199,199,1);
+	display:inline-block;
+}
+h3.out {display: none;}
+div.black a::after, h3.out a::after
+{
+	display: block;
+	content: "";
+	width: 100%;
+	height: 3px;
+	//background-color: rgba(15,199,199,1);
+	background-color: #00FFFF;
+	transform: scale(0,1);
+	transition-duration: 0.5s;
+	transform-origin: left top;
+}
+div.black a:hover:after,h3.out a:hover:after
+{
+transform: scale(1);
+transition-duration: 0.5s;
+}
+div.black_text
+{
+	width: 100%; 
+	text-align: center; 
+	margin-top: 30%;
+}
+div.info_content p.main_p 
+{
+	text-align: center;
+	font-size: 1.2em;
+	color: #6C98B4;
+	font-family: DeroldGHOST;
+	text-transform: uppercase;
+}
+p.main_p a
+{
+	display: inline-block;
+	text-decoration: none;
+	color:rgba(15,199,199,1);
+}
+p.main_p a::after
+{
+	display:block;
+	content:" ";
+	width: 100%;
+	height: 3px;
+	background-color: rgba(15,199,199,1);
+	transform: scale(0,1);
+	transition-duration: 0.5s;
+	transform-origin: top left;
+
+}
+p.main_p a:hover:after
+{
+	transform: scale(1);
+	transition-duration: 0.5s;
+}
+div.circles
+{
+	overflow: hidden;
+	width: 100%;
+}
+div[class^="circ_block"]
+{
+	float: left;
+	height: 40vh;
+	width: 33%;
+}
+div.circle
+{
+	margin: 56px auto 28px auto;
+	width: 110px;
+	height: 110px;
+	//background-color: #F0FFFF;
+	background-color: black;
+	border-radius: 50%;
+	border: solid 3px rgba(15,199,199,1);
+}
+div.circle img
+{
+
+	margin: 15px 15px 15px 15px;
+}
+iframe
+{
+	width: 100%;
+	height: 450px;
+}
+div.cont
+{
+	width: 100%;
+	overflow: hidden;
+}
+div.forms
+{
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	overflow: hidden;
+	margin-top: 20px;
+}
+form
+{overflow: hidden;}
+input[type=text],textarea
+{
+	float: left;
+	width: 440px;
+	max-width: 450px;
+	//margin-right: 50px;
+	margin-bottom: 50px;
+	border: none;
+	border-bottom: 3px black solid;
+	padding-bottom:  10px;
+	padding-top: 10px;
+	font-family: DeroldGHOST;
+	font-size: 1.4em;	
+	outline: none;		
+}
+
+label
+{
+	
+	font-family: DeroldGHOST;
+	font-size: 1.4em;
+	float: left;
+}
+div.form
+{
+	width: 45%;
+	overflow: hidden;
+	float: left;
+	margin-right: 5%;
+	margin-bottom: 50px;
+}
+
+button
+{
+	font-family: DeroldGHOST;
+	font-size: 1.4em;
+	width: 210px;
+	height: 70px;
+	display: block;
+	padding: 20px 80px 20px 80px;
+	background: transparent;
+	outline: none;
+	letter-spacing: 2px;
+	border: 3px solid rgba(15,199,199,1);
+	color:rgba(15,199,199,1);
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
+button span
+{
+	position: absolute;
+	left: 0;
+	top: 35%;
+	text-align: center;
+	width: 100%;
+	z-index: 2;	
+}
+div.button div.bl
+{
+	width: 210px;
+	height: 70px;
+	background: rgba(0,0,0,0);
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: skew(45deg) scale(0,1);
+	transition-duration:0.5s;
+}
+div.button:hover div.bl
+{
+	transform: skew(45deg) scale(1);
+	 background:  rgba(0,0,0,1);
+	 transition-duration:0.5s;
+}
+@media screen  and (max-width: 1300px)
+{
+	body
+	{
+		background-size: 150%;
+		background-position: 55% top;
+	}
+}
+@media screen  and (max-width: 1100px)
+{
+
+	body
+	{
+	background: url(fon.jpg) no-repeat ;
+	background-size: 185%;
+	background-position: 55% -1%;
+	}
+	h1.title,h2.title
+	{
+		font-size: 2.4em;
+	}
+	div.info_content div.img_about
+	{
+		float: left;
+		clear: right;
+		width: 30%;
+		margin-bottom: 50px;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	div.info_content img.img_about2
+	{
+		margin: 0;
+
+	}
+	div.box
+	{
+		width: 100%;
+	}
+	div.black
+	{
+		display: none;
+	}
+	div.box:hover div[class^="border"]
+	{
+		display: none;
+	}
+	div.box h3.out
+	{display: block;}
+
+	div[class^="circ_block"]
+	{
+		width: 50%;
+	}
+	div.contacts div[class^="circ_block"]
+	{
+	width: 33%;	
+	}
+	form
+	{
+		text-align: center;
+	}
+	
+	label,input[type=text],textarea
+	{
+		float: none;
+		margin-left:auto;
+		margin-right: auto;
+		text-align: center;
+		
+	}
+	
+	div.form
+	{
+		margin-right: 0px;
+		width: 100%;
+	}
+	div.button
+	{
+		text-align: center;
+		padding-left:35%;
+		padding-right: 35%;
+
+	}
+	button
+	{
+		//left: 35%;
+		
+	}
+}
+@media screen  and (max-width: 750px)
+{
+	body
+	{
+	background: url(fon.jpg) no-repeat ;
+	background-size: 300%;
+	background-position: 55% -2%;
+	}
+	div.lines
+	{
+		width: 50px;
+		height: 40px;
+		//background-color: rgba(0,0,0,0.1);
+		text-align: center;
+		padding-top: 10px;
+		margin-left: 20px;
+		margin-top: 10px;
+		padding-bottom: 7px;
+	}
+	div.lines div.line
+	{
+		margin: 5px;
+		width: 40px;
+		height: 3px;
+		background-color: white;
+	}
+	ul
+	{
+		display: none;
+		position: absolute;
+		left: -40px;
+		top: 54px;
+	}
+	div.menu:hover ul
+	{
+		display: block;
+	}
+	div.contacts div[class^="circ_block"]
+	{
+		width: 100%;
+	}
+	div[class^="circ_block"]
+	{
+		width: 100%;
+	}
+	li
+	{
+		display: block;
+		width: 150%;
+		float: left;
+		background-color: rgba(0,0,0,0.5);
+		height: 50px;
+		position: relative;
+		left: 0;
+
+	}
+	div.main
+	{
+		height: 100vh;
+	}
+	nav
+	{
+		height: 70px;
+	}
+	div.bg
+	{
+		height:100vh;
+		background-size: 120%;
+	}
+	h1.title,h2.title
+	{
+		font-size: 2em;
+	}
+	
+	
+	h2.title_main
+	{
+		font-size: 2em;
+	}
+	div.info_content div.img_about
+	{
+		width: 100%;
+		overflow: hidden;
+		text-align: center;
+		padding: 25px;
+	}
+	div.info_content img.img_about
+	{
+		max-width: 350px;
+		height: auto;
+		margin: 0;
+		float: none;
+	}
+	
+	
+	form
+	{
+		text-align: center;
+	}
+	
+	label,input[type=text],textarea
+	{
+		float: none;
+		margin-left:auto;
+		margin-right: auto;
+		text-align: center;
+		width: 100%;
+	}
+
+}
+
+@media screen  and (max-width: 557px)
+{
+	body
+	{background-size: 450%;
+	}
+	div.bg
+	{
+		background-size: 150%;
+	}
+}

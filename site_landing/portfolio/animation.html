@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+	div
+	{
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		animation-name: first;
+		animation-iteration-count: infinite;
+		animation-duration: 6s;
+		//animation-delay: 1s;
+		//animation-fill-mode: forwards;
+	}
+	@keyframes first 
+	{
+		from
+		{
+			width: 100px;
+		height: 100px;
+		background-color: red;
+			
+		}
+		25%
+		{
+			transform: translateX(300px);
+			border-radius: 50%;
+			background-color: gold;
+		}
+		50%
+		{
+			transform: translateY(300px) translateX(300px)    rotate(45deg);
+			border-radius: 0%;
+			background-color: blue;
+		
+		}
+		75%
+		{
+			transform: translateY(300px) rotate(0deg);
+			background-color: green;
+			
+		}
+		to
+		{
+			width: 100px;
+		height: 100px;
+		transform: translate(0);
+		background-color: red;
+		
+		}
+	}
+</style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
